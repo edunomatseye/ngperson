@@ -1,0 +1,12 @@
+.form {
+    display: flex;
+}
+
+.form input[type='text'] {
+    flex: 10;
+    padding: 50px
+}
+
+.form input[type='sunmit'] {
+    flex: 2
+}

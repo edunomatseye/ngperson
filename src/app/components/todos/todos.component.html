@@ -1,0 +1,23 @@
+<app-add-todo
+  (addTodo)="addTodo($event)"
+></app-add-todo>
+
+<app-todo-item 
+  *ngFor="let todoItem of todos" 
+  [todo]="todoItem"
+  (deleteTodo)="deleteTodo($event)"
+  >
+</app-todo-item>
+
+<table>
+  <tr *ngFor="let todoItem of todos; 
+    let i = index; 
+    let e = even; 
+    let o = odd;
+    let f = first;
+    let l = last" >
+    <td>{{i+1}} {{todoItem.title}}</td>
+  </tr>
+</table> 
+
+
