@@ -12,6 +12,7 @@ export class TakeVoteComponent implements OnInit {
   disagreed = 0;
   constructor() { }
 
+  
   ngOnInit() {
   }
 
